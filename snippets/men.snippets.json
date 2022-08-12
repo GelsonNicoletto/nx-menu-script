@@ -1,0 +1,281 @@
+{
+    "accelerator" : {
+        "prefix" : "ACCELERATOR",
+        "body" : [
+            "ACCELERATOR ${0:Crtl+?}"
+        ]   
+    },
+    "actions" : {
+        "prefix" : "ACTIONS",
+        "body" : [
+            "ACTIONS ${0:STANDARD}"
+        ]   
+    },
+    "actions-pre" : {
+        "prefix" : "ACTIONS/PRE",
+        "body" : [
+            "ACTIONS/PRE ${0:Action}"
+        ]   
+    },
+    "actions-post" : {
+        "prefix" : "ACTIONS/POST",
+        "body" : [
+            "ACTIONS/POST ${0:Action}"
+        ]   
+    },
+    "after" : {
+        "prefix" : "AFTER",
+        "body" : [
+            "AFTER ${0:Menu Component Name}",
+            "",
+            "END_OF_AFTER",
+            ""
+        ]   
+    },
+    "application_button" : {
+        "prefix" : "APPLICATION_BUTTON",
+        "body" : [
+            "APPLICATION_BUTTON ${0:Application Name}",
+            ""
+        ]   
+    },
+    "before" : {
+        "prefix" : "BEFORE",
+        "body" : [
+            "BEFORE ${0:Menu_Component_Name}",
+            "",
+            "END_OF_BEFORE",
+            ""
+        ]   
+    },
+    "bitmap" : {
+        "prefix" : "BITMAP",
+        "body" : [
+            "BITMAP ${0:Path to file}"
+        ]   
+    },
+    "button_new" : {
+        "prefix" : "BUTTON NEW",
+        "body" : [
+            "BUTTON ${1:New_Button_Name}",
+            "   LABEL ${2:&Label}",
+            "   !MESSSAGE ",
+            "   !HELP ",     
+            "   !ACCELERATOR ",
+            "   !HINT EXCLUDE_FROM_COMMAND_FINDER",
+            "   !TOOLBAR_LABEL ",
+            "   !RIBBON_LABEL ",
+            "   !NO_REPEAT",
+            "   !SYNONYMS ",
+            "   BITMAP  ${3:Path to file}",
+            "   ACTIONS ${4:Action}",
+            ""
+        ]   
+    },
+    "button_existing" : {
+        "prefix" : "BUTTON EXISTING",
+        "body" : [
+            "BUTTON ${1:Existing_Button_Name}"
+        ]   
+    },
+    "cascade_button" : {
+        "prefix" : "CASCADE_BUTTON",
+        "body" : [
+            "CASCADE_BUTTON ${1:Existing_Button_Name}",
+            "LABEL",   
+            "",
+            "MENU ${2:Existing_Menu_Name}",
+            "",
+            "END_OF_MENU",
+            ""
+        ]   
+    },
+    "create" : {
+        "prefix" : "CREATE",
+        "body" : [
+            "CREATE ${1:New_Menu_Name}",
+            ""
+        ]   
+    },
+    "edit" : {
+        "prefix" : "EDIT",
+        "body" : [
+            "EDIT ${1:Existing_Menu_Name}",
+            ""
+        ]   
+    },
+    "help" : {
+        "prefix" : "HELP",
+        "body" : [
+            "HELP ${1:Help Token}"
+        ]   
+    },
+    "hide" : {
+        "prefix" : "HIDE",
+        "body" : [
+            "HIDE ${1:Existing_Button_Name}"            
+        ]   
+    },
+    "hint" : {
+        "prefix" : "HINT",
+        "body" : [
+            "HINT ${1:Text}"            
+        ]   
+    },
+    "hint_exclude" : {
+        "prefix" : "HINT EXCLUDE_FROM_COMMAND_FINDER",
+        "body" : [
+            "HINT EXCLUDE_FROM_COMMAND_FINDER"            
+        ]   
+    },
+    "label" : {
+        "prefix" : "LABEL",
+        "body" : [
+            "LABEL ${1:&Label}"            
+        ]   
+    },
+    "libraries" : {
+        "prefix" : "LIBRARIES ",
+        "body" : [
+            "LIBRARIES  ${1:file.dll}"            
+        ]   
+    },
+    "menu" : {
+        "prefix" : "MENU",
+        "body" : [
+            "MENU ${1:Existing_Menu_Name}",
+            "",
+            "END_OF_MENU",
+            ""
+        ]   
+    },
+    "menu_files" : {
+        "prefix" : "MENU_FILES ",
+        "body" : [
+            "MENU_FILES  ${1:file.men}",  
+            ""
+        ]   
+    },
+    "modify" : {
+        "prefix" : "MODIFY",
+        "body" : [
+            "MODIFY" ,
+            "   ${1:Existing_Menu_Name}",
+            "",
+            "END_OF_MODIFY",
+            ""
+        ]   
+    },
+    "no_repeat" : {
+        "prefix" : "NO_REPEAT  ",
+        "body" : [
+            "NO_REPEAT"            
+        ]   
+    },
+    "on" : {
+        "prefix" : "ON",
+        "body" : [
+            "ON"            
+        ]   
+    },
+    "off" : {
+        "prefix" : "OFF",
+        "body" : [
+            "OFF"            
+        ]   
+    },
+    "popup_location" : {
+        "prefix" : "POPUP_LOCATION",
+        "body" : [
+            "POPUP_LOCATION ${1:1-8}"            
+        ]   
+    },
+    "ribbon_label" : {
+        "prefix" : "RIBBON_LABEL ",
+        "body" : [
+            "RIBBON_LABEL ${1:&Label}"            
+        ]   
+    },
+    "sensitivity" : {
+        "prefix" : "SENSITIVITY",
+        "body" : [
+            "SENSITIVITY ${1:ON|OFF}",
+            ""
+        ]   
+    },
+    "separator" : {
+        "prefix" : "SEPARATOR",
+        "body" : [
+            "SEPARATOR",
+            ""
+        ]   
+    },
+    "show" : {
+        "prefix" : "SHOW",
+        "body" : [
+            "SHOW ${1:Existing_Button_Name}"
+        ]   
+    },
+    "synonyms" : {
+        "prefix" : "SYNONYMS ",
+        "body" : [
+            "SYNONYMS  ${1:Text}"
+        ]   
+    },
+    "title" : {
+        "prefix" : "TITLE",
+        "body" : [
+            "TITLE ${1:Text}",
+            ""
+        ]   
+    },
+    "toggle_button" : {
+        "prefix" : "TOGGLE_BUTTON ",
+        "body" : [
+            "TOGGLE_BUTTON ${1:Existing_Button_Name}",
+            "   LABEL ${2:&Label}",
+            "   VALUE ${3:ON|OFF}",
+            "   ACTIONS ${4:Action}",
+            ""
+        ]   
+    },
+    "toolbar_label" : {
+        "prefix" : "TOOLBAR_LABEL ",
+        "body" : [
+            "TOOLBAR_LABEL  ${1:Label}",
+            ""
+        ]   
+    },
+    "top" : {
+        "prefix" : "TOP",
+        "body" : [
+            "TOP_MENU" ,
+            "   ${1:Menu_Component_Name}",
+            "",
+            "END_OF_TOP",
+            ""
+        ]   
+    },
+    "value" : {
+        "prefix" : "VALUE",
+        "body" : [
+            "VALUE ${1:ON|OFF}",
+            ""
+        ]   
+    },
+    "version" : {
+        "prefix" : "VERSION",
+        "body" : [
+            "VERSION ${1:139}",
+            ""
+        ]   
+    },
+    "view_popup_menu_files" : {
+        "prefix" : "VIEW_POPUP_MENU_FILES ",
+        "body" : [
+            "VIEW_POPUP_MENU_FILES ${1:file.men}",
+            ""
+        ]   
+    }
+    
+}

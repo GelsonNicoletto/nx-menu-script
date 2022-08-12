@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NXMenuScript",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#variable"},
+		{"include": "#comment"},
+		{"include": "#strings"}
+	],
+	"repository": {		
+		"keywords": {
+			"patterns": [				
+				{"name": "keyword.control.men",
+					"match": "\\b(AFTER|BEFORE|END_OF_BEFORE|CREATE|END_OF_AFTER|EDIT|VERSION|MODIFY|END_OF_MODIFY|MENU|END_OF_MENU|TITLE|TOP)\\b"
+				},				
+				{"name": "keyword.command.men",
+					"match": "\\b(APPLICATION_BUTTON|BUTTON|CASCADE_BUTTON|SEPARATOR|TOGGLE_BUTTON)\\b"
+				},			
+				{"name": "entity.name.function.scope.Button-Options.men",
+					"match": "\\b(ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS)\\b"
+				},				
+				{"name": "entity.name.function.scope.Menu-Options.men",
+					"match": "\\b(MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES)\\b"
+				},				
+				{"name": "variable.parameter.function.ON-OFF.men",
+					"match": "\\b(ON|OFF)\\b"
+				},			
+				{"name": "variable.parameter.function.men",
+					"match": "\\b(LABEL)\\b"
+				}
+			]
+		},		
+		"variable": {
+			"name": "variable.parameter.men",
+			"begin": "\\${",
+			"end": "\\}",
+			"patterns": [
+				{"name": "constant.character.escape.men",
+					"match": "\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.line.men",
+			"begin": "!",
+			"end": "\n",
+			"patterns": [
+				{"name": "constant.character.escape.men",
+					"match": "\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.men",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{"name": "constant.character.escape.men",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.men"
+}
