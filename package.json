@@ -7,20 +7,32 @@
     "vscode": "^1.70.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages","Snippets"
   ],
   "contributes": {
     "languages": [{
       "id": "men",
       "aliases": ["NXMenuScript", "men"],
       "extensions": [".men",".tbr"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./men.language-configuration.json"
+    },
+    {
+      "id": "dat",
+      "aliases": ["NXMenuScript-Dat", "dat"],
+      "extensions": [".dat"],
+      "configuration": "./dat.language-configuration.json"
     }],
     "grammars": [{
       "language": "men",
       "scopeName": "source.men",
       "path": "./syntaxes/men.tmLanguage.json"
-    }],
+    },
+    {
+      "language": "dat",
+      "scopeName": "source.dat",
+      "path": "./syntaxes/dat.tmLanguage.json"
+    }  
+    ],
     "snippets": [
       {
         "language": "men",

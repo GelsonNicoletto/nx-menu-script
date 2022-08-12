@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NXMenuScript",
+	"patterns": [
+		{"include": "#comment"},
+		{"include": "#keywords"},
+		{"include": "#strings"},
+		{"include": "#variable"}			
+	],
+	"repository": {		
+		"keywords": {
+			"patterns": [				
+				{"name": "keyword.control.dat",
+					"match": "\\b(AFTER|BEFORE|END_OF_BEFORE|CREATE|END_OF_AFTER|EDIT|VERSION|MODIFY|END_OF_MODIFY|MENU|END_OF_MENU|TITLE|TOP)\\b"
+				},
+				{"name": "keyword.opperator.dat",
+					"match": "="
+				}	
+			]
+		},		
+		"variable": {
+			"name": "variable.parameter.dat",
+			"begin": "\\${",
+			"end": "\\}",
+			"patterns": [
+				{"name": "constant.character.escape.dat",
+					"match": "\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.line.dat",
+			"begin": "#",
+			"end": "\n",
+			"patterns": [
+				{"name": "constant.character.escape.dat",
+					"match": "\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.dat",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{"name": "constant.character.escape.dat",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.dat"
+}
