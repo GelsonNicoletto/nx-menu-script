@@ -11,19 +11,19 @@
 		"keywords": {
 			"patterns": [				
 				{"name": "keyword.control.grb",
-					"match": "\\b(VERSION|MODIFY|END_OF_MODIFY|TITLE|BEGIN_DROPDOWN|END_DROPDOWN)\\b"
+					"match": "\\b(VERSION|MODIFY|END_OF_MODIFY|TITLE|BEGIN_DROPDOWN|END_DROPDOWN|BEGIN_GALLERY|END_GALLERY)\\b"
 				},				
 				{"name": "keyword.command.grb",
 					"match": "\\b(APPLICATION_BUTTON|BUTTON|CASCADE_BUTTON|SEPARATOR|TOGGLE_BUTTON)\\b"
 				},			
 				{"name": "entity.name.function.scope.Button-Options.grb",
-					"match": "\\b(ACTION|ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS)\\b"
+					"match": "\\b(ACTION|ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS|GALLERY_STYLE|COLLAPSED)\\b"
 				},				
 				{"name": "entity.name.function.scope.Menu-Options.grb",
-					"match": "\\b(RIBBON_STYLE|AS_POPUP_MENU|MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES)\\b"
+					"match": "\\b(RIBBON_STYLE|AS_POPUP_MENU|MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES|COLUMN_IN_RIBBON|COLUMN_IN_POPUP)\\b"
 				},				
 				{"name": "variable.parameter.function.ON-OFF.grb",
-					"match": "\\b(ON|OFF|SMALL_IMAGE_AND_TEXT)\\b"
+					"match": "\\b(ON|OFF|SMALL_IMAGE_AND_TEXT|TRUE|FALSE)\\b"
 				},			
 				{"name": "variable.parameter.function.grb",
 					"match": "\\b(LABEL)\\b"
