@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NXMenuScript",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#variable"},
+		{"include": "#comment"},
+		{"include": "#strings"}
+	],
+	"repository": {		
+		"keywords": {
+			"patterns": [				
+				{"name": "keyword.control.tbr",
+					"match": "\\b(VERSION|MODIFY|END_OF_MODIFY|TITLE|BEGIN_DROPDOWN|END_DROPDOWN)\\b"
+				},				
+				{"name": "keyword.command.tbr",
+					"match": "\\b(APPLICATION_BUTTON|BUTTON|CASCADE_BUTTON|SEPARATOR|TOGGLE_BUTTON)\\b"
+				},			
+				{"name": "entity.name.function.scope.Button-Options.tbr",
+					"match": "\\b(ACTION|ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS)\\b"
+				},				
+				{"name": "entity.name.function.scope.Menu-Options.tbr",
+					"match": "\\b(AS_POPUP_MENU|MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES)\\b"
+				},				
+				{"name": "variable.parameter.function.ON-OFF.tbr",
+					"match": "\\b(ON|OFF)\\b"
+				},			
+				{"name": "variable.parameter.function.tbr",
+					"match": "\\b(LABEL)\\b"
+				}
+			]
+		},		
+		"variable": {
+			"name": "variable.parameter.tbr",
+			"begin": "\\${",
+			"end": "\\}",
+			"patterns": [
+				{"name": "constant.character.escape.tbr",
+					"match": "\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.line.tbr",
+			"begin": "!",
+			"end": "\n",
+			"patterns": [
+				{"name": "constant.character.escape.tbr",
+					"match": "\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.tbr",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{"name": "constant.character.escape.tbr",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.tbr"
+}

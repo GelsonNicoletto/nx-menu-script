@@ -13,14 +13,38 @@
     "languages": [{
       "id": "men",
       "aliases": ["NXMenuScript", "men"],
-      "extensions": [".men",".tbr"],
+      "extensions": [".men"],
       "configuration": "./men.language-configuration.json"
     },
     {
       "id": "dat",
-      "aliases": ["NXMenuScript-Dat", "dat"],
+      "aliases": ["NXMenuScript", "dat"],
       "extensions": [".dat"],
       "configuration": "./dat.language-configuration.json"
+    },
+    {
+      "id": "tbr",
+      "aliases": ["NXMenuScript", "tbr"],
+      "extensions": [".tbr"],
+      "configuration": "./tbr.language-configuration.json"
+    },
+    {
+      "id": "abr",
+      "aliases": ["NXMenuScript", "abr"],
+      "extensions": [".abr"],
+      "configuration": "./abr.language-configuration.json"
+    },
+    {
+      "id": "grb",
+      "aliases": ["NXMenuScript", "grb"],
+      "extensions": [".grb"],
+      "configuration": "./grb.language-configuration.json"
+    },
+    {
+      "id": "rtb",
+      "aliases": ["NXMenuScript", "rtb"],
+      "extensions": [".rtb"],
+      "configuration": "./rtb.language-configuration.json"
     }],
     "grammars": [{
       "language": "men",
@@ -31,7 +55,27 @@
       "language": "dat",
       "scopeName": "source.dat",
       "path": "./syntaxes/dat.tmLanguage.json"
-    }  
+    },
+    {
+      "language": "tbr",
+      "scopeName": "source.tbr",
+      "path": "./syntaxes/tbr.tmLanguage.json"
+    },
+    {
+      "language": "grb",
+      "scopeName": "source.grb",
+      "path": "./syntaxes/grb.tmLanguage.json"
+    },
+    {
+      "language": "abr",
+      "scopeName": "source.abr",
+      "path": "./syntaxes/abr.tmLanguage.json"
+    },
+    {
+      "language": "rtb",
+      "scopeName": "source.rtb",
+      "path": "./syntaxes/rtb.tmLanguage.json"
+    }    
     ],
     "snippets": [
       {
