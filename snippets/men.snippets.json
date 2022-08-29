@@ -59,7 +59,7 @@
         "body" : [
             "BUTTON ${1:New_Button_Name}",
             "   LABEL ${2:&Label}",
-            "   !MESSSAGE ",
+            "   !MESSAGE ",
             "   !HELP ",     
             "   !ACCELERATOR ",
             "   !HINT EXCLUDE_FROM_COMMAND_FINDER",
@@ -153,6 +153,13 @@
         "prefix" : "MENU_FILES ",
         "body" : [
             "MENU_FILES  ${1:file.men}",  
+            ""
+        ]   
+    },
+    "message" : {
+        "prefix" : "MESSAGE ",
+        "body" : [
+            "MESSAGE  ${1:&Label}",  
             ""
         ]   
     },
