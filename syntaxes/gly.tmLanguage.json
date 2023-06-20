@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NXMenuScript",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#variable"},
+		{"include": "#comment"},
+		{"include": "#strings"}
+	],
+	"repository": {		
+		"keywords": {
+			"patterns": [				
+				{"name": "keyword.control.gly",
+					"match": "\\b(VERSION|MODIFY|END_OF_MODIFY|TITLE|BEGIN_DROPDOWN|END_DROPDOWN|BEGIN_GALLERY|END_GALLERY|CONTEXT_TITLE|BEGIN_RECENTLY_USED|END_RECENTLY_USED)\\b"
+				},				
+				{"name": "keyword.command.gly",
+					"match": "\\b(APPLICATION_BUTTON|BUTTON|CASCADE_BUTTON|SEPARATOR|TOGGLE_BUTTON)\\b"
+				},			
+				{"name": "entity.name.function.scope.Button-Options.gly",
+					"match": "\\b(ACTION|ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS|GALLERY_STYLE|COLLAPSED)\\b"
+				},				
+				{"name": "entity.name.function.scope.Menu-Options.gly",
+					"match": "\\b(RIBBON_STYLE|AS_POPUP_MENU|MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES|COLUMN_IN_RIBBON|COLUMN_IN_POPUP)\\b"
+				},				
+				{"name": "variable.parameter.function.ON-OFF.gly",
+					"match": "\\b(ON|OFF|SMALL_IMAGE_AND_TEXT|TRUE|FALSE)\\b"
+				},			
+				{"name": "variable.parameter.function.gly",
+					"match": "\\b(LABEL|NUMBER_OF_ITEMS)\\b"
+				}
+			]
+		},		
+		"variable": {
+			"name": "variable.parameter.gly",
+			"begin": "\\${",
+			"end": "\\}",
+			"patterns": [
+				{"name": "constant.character.escape.gly",
+					"match": "\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.line.gly",
+			"begin": "!",
+			"end": "\n",
+			"patterns": [
+				{"name": "constant.character.escape.gly",
+					"match": "\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.gly",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{"name": "constant.character.escape.gly",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.gly"
+}

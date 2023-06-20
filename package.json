@@ -1,7 +1,7 @@
 {
   "name": "nx-menu-script",
   "displayName": "NX Menu Script",
-  "description": "Syntax highkighting for nx-menu-script lang",
+  "description": "Syntax highlighting for nx-menu-script lang",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.70.0"
@@ -9,6 +9,8 @@
   "categories": [
     "Programming Languages","Snippets"
   ],
+
+  
   "contributes": {
     "languages": [{
       "id": "men",
@@ -41,11 +43,20 @@
       "configuration": "./grb.language-configuration.json"
     },
     {
+      "id": "gly",
+      "aliases": ["NXMenuScript", "gly"],
+      "extensions": [".gly"],
+      "configuration": "./gly.language-configuration.json"
+    },
+    {
       "id": "rtb",
       "aliases": ["NXMenuScript", "rtb"],
       "extensions": [".rtb"],
       "configuration": "./rtb.language-configuration.json"
     }],
+
+
+
     "grammars": [{
       "language": "men",
       "scopeName": "source.men",
@@ -72,11 +83,18 @@
       "path": "./syntaxes/abr.tmLanguage.json"
     },
     {
+      "language": "gly",
+      "scopeName": "source.gly",
+      "path": "./syntaxes/gly.tmLanguage.json"
+    },
+    {
       "language": "rtb",
       "scopeName": "source.rtb",
       "path": "./syntaxes/rtb.tmLanguage.json"
     }    
     ],
+
+
     "snippets": [
       {
         "language": "men",
