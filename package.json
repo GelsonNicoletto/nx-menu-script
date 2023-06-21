@@ -1,8 +1,8 @@
 {
   "name": "nx-menu-script",
   "displayName": "NX Menu Script",
-  "description": "Syntax highlighting for nx-menu-script lang",
-  "version": "0.0.1",
+  "description": "Syntax highlighting for nx-menu-script language",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.70.0"
   },
