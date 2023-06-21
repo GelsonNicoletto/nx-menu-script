@@ -1,6 +1,6 @@
-# nx-menu-script 
+# NX-Menu-Script 
 
-Esta extensão tem por objetivo auxiliar desenvolvedores na customização de arquivos da lingugem MenuScript utilizados no sistema CAD Siemens NX com realses de cor nos arquivos de menu
+This extension aims to help developers customize MenuScript language files used in the Siemens NX CAD system with color enhancements
 
 ## Features
 
@@ -18,9 +18,10 @@ Keywords with colors
 
 ![Keywords](images/feature-1.png)
 
+
 You can use .men snippets to create custom ribon bars, buttons, actions, etc.
 
-![Snippets](images/feature-1.png)
+![Snippets](images/feature-2.png)
 
 
 ## Requirements
@@ -29,7 +30,7 @@ You can use .men snippets to create custom ribon bars, buttons, actions, etc.
 
 ## Known Issues
 
-Esta extensão não tem por objetivo recurso avançados como auto-completar ou checagem de formato
+This extension is not intended for advanced features like autocompletion or format checking.
 
 ## Release Notes
 
@@ -37,18 +38,7 @@ Esta extensão não tem por objetivo recurso avançados como auto-completar ou chec
 
 Extensão pubicada
 
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
 ## For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
