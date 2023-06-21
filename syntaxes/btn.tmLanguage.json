@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NXMenuScript",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#variable"},
+		{"include": "#comment"},
+		{"include": "#strings"}
+	],
+	"repository": {		
+		"keywords": {
+			"patterns": [				
+				{"name": "keyword.control.btn",
+					"match": "\\b(ATTACHMENT_TARGET|VERSION|MODIFY|END_OF_MODIFY|TITLE|BEGIN_DROPDOWN|END_DROPDOWN)\\b"
+				},				
+				{"name": "keyword.command.btn",
+					"match": "\\b(APPLICATION_BUTTON|BUTTON|CASCADE_BUTTON|GROUP|SEPARATOR|TOGGLE_BUTTON)\\b"
+				},			
+				{"name": "entity.name.function.scope.Button-Options.btn",
+					"match": "\\b(ACTION|ACTIONS|ACTIONS/PRE|ACTIONS/POST|MESSSAGE|HELP|HELP_TCIN|ACCELERATOR|BITMAP|HIDE|HINT|HINT EXCLUDE_FROM_COMMAND_FINDER|LABEL|NO_REPEAT|SHOW|SYNONYMS|STYLE)\\b"
+				},				
+				{"name": "entity.name.function.scope.Menu-Options.btn",
+					"match": "\\b(RIBBON_STYLE|AS_POPUP_MENU|MENU_FILES|LIBRARIES|POPUP_LOCATION|TOOLBAR_LABEL|RIBBON_LABEL|SENSITIVITY|VALUE|VIEW_POPUP_MENU_FILES)\\b"
+				},				
+				{"name": "variable.parameter.function.ON-OFF.btn",
+					"match": "\\b(LeftBorderBar|IMAGE_AND_TEXT)\\b"
+				},			
+				{"name": "variable.parameter.function.btn",
+					"match": "\\b(LABEL|MESSAGE)\\b"
+				}
+			]
+		},		
+		"variable": {
+			"name": "variable.parameter.btn",
+			"begin": "\\${",
+			"end": "\\}",
+			"patterns": [
+				{"name": "constant.character.escape.btn",
+					"match": "\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.line.btn",
+			"begin": "!",
+			"end": "\n",
+			"patterns": [
+				{"name": "constant.character.escape.btn",
+					"match": "\\."
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.btn",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{"name": "constant.character.escape.btn",
+					"match": "\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.btn"
+}

@@ -37,6 +37,12 @@
       "configuration": "./abr.language-configuration.json"
     },
     {
+      "id": "btn",
+      "aliases": ["NXMenuScript", "btn"],
+      "extensions": [".btn"],
+      "configuration": "./btn.language-configuration.json"
+    },
+    {
       "id": "grb",
       "aliases": ["NXMenuScript", "grb"],
       "extensions": [".grb"],
@@ -81,6 +87,11 @@
       "language": "abr",
       "scopeName": "source.abr",
       "path": "./syntaxes/abr.tmLanguage.json"
+    },
+    {
+      "language": "btn",
+      "scopeName": "source.btn",
+      "path": "./syntaxes/btn.tmLanguage.json"
     },
     {
       "language": "gly",
