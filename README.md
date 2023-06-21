@@ -5,22 +5,22 @@ Esta extensão tem por objetivo auxiliar desenvolvedores na customização de arqui
 ## Features
 
 Menu Script file extension supported:
-abr
-btn
-dat
-gly
-grb
-men
-rtb
-tbr
+* abr
+* btn
+* dat
+* gly
+* grb
+* men
+* rtb
+* tbr
 
 Keywords with colors
 
-\!\[feature X\]\(images/feature-1.png\)
+\\[Keywords\]\(images/feature-1.png\)
 
 You can use .men snippets to create custom ribon bars, buttons, actions, etc.
 
-\!\[feature X\]\(images/feature-1.png\)
+\\[Snippets\]\(images/feature-1.png\)
 
 
 ## Requirements
