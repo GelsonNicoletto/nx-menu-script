@@ -16,11 +16,11 @@ Menu Script file extension supported:
 
 Keywords with colors
 
-\\[Keywords\]\(images/feature-1.png\)
+![Keywords\]\(images/feature-1.png\)
 
 You can use .men snippets to create custom ribon bars, buttons, actions, etc.
 
-\\[Snippets\]\(images/feature-1.png\)
+![Snippets\]\(images/feature-1.png\)
 
 
 ## Requirements
