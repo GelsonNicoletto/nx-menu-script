@@ -36,7 +36,7 @@ This extension is not intended for advanced features like autocompletion or form
 
 ### 1.0.0
 
-Extensão pubicada
+First Release
 
 ## For more information
 
