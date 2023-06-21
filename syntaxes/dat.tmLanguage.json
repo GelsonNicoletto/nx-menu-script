@@ -1,20 +1,23 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "NXMenuScript",
-	"patterns": [
-		{"include": "#comment"},
+	"patterns": [		
 		{"include": "#keywords"},
-		{"include": "#strings"},
-		{"include": "#variable"}			
+		{"include": "#comment"},		
+		{"include": "#variable"},		
+		{"include": "#strings"}			
 	],
 	"repository": {		
 		"keywords": {
 			"patterns": [				
-				{"name": "keyword.control.dat",
-					"match": "\\b(AFTER|BEFORE|END_OF_BEFORE|CREATE|END_OF_AFTER|EDIT|VERSION|MODIFY|END_OF_MODIFY|MENU|END_OF_MENU|TITLE|TOP)\\b"
+				{"name": "keyword.command.dat",
+					"match": "(#if FILE|#if|#else|#endif|#include)"
 				},
 				{"name": "keyword.opperator.dat",
 					"match": "="
+				},
+					{"name": "keyword.control.gly",
+					"match": "# (.*)=(.*)"
 				}	
 			]
 		},		
