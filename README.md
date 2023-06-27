@@ -23,6 +23,9 @@ You can use .men snippets to create custom ribon bars, buttons, actions, etc.
 
 ![Snippets](images/feature-2.png)
 
+You can handle dat files with highlights
+
+![Highlights](images/feature-3.png)
 
 ## Requirements
 
