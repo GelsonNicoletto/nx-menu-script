@@ -3,9 +3,10 @@
 	"name": "NXMenuScript",
 	"patterns": [		
 		{"include": "#keywords"},
-		{"include": "#comment"},		
-		{"include": "#variable"},		
-		{"include": "#strings"}			
+		{"include": "#comment"},	
+		{"include": "#strings"},			
+		{"include": "#variable"}		
+			
 	],
 	"repository": {		
 		"keywords": {
@@ -16,7 +17,7 @@
 				{"name": "keyword.opperator.dat",
 					"match": "="
 				},
-					{"name": "keyword.control.gly",
+				{"name": "keyword.control.dat",
 					"match": "# (.*)=(.*)"
 				}	
 			]
