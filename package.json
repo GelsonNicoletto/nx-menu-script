@@ -2,10 +2,10 @@
   "name": "nx-menu-script",
   "displayName": "NX Menu Script",
   "description": "Syntax highlighting for nx-menu-script language",
-  "version": "0.0.1",
-  "publisher": "Gelson Z. Nicoletto",
+  "version": "1.0.1",
+  "publisher": "GelsonNicoletto",
   "author": {
-      "name": "Gelson Z. Nicoletto"
+    "name": "Gelson Z. Nicoletto"
   },
   "engines": {
     "vscode": "^1.70.0"
