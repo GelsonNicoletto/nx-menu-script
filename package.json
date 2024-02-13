@@ -3,6 +3,10 @@
   "displayName": "NX Menu Script",
   "description": "Syntax highlighting for nx-menu-script language",
   "version": "0.0.1",
+  "publisher": "Gelson Z. Nicoletto",
+  "author": {
+      "name": "Gelson Z. Nicoletto"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
