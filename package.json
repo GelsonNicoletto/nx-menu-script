@@ -4,6 +4,7 @@
   "description": "Syntax highlighting for nx-menu-script language",
   "version": "1.0.1",
   "publisher": "GelsonNicoletto",
+  "repository":"https://github.com/GelsonNicoletto/nx-menu-script",
   "author": {
     "name": "Gelson Z. Nicoletto"
   },
